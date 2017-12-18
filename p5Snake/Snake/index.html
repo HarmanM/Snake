@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <title>Snake</title>
+  <script src="../p5.min.js"></script>
+  <script src="../addons/p5.dom.min.js"></script>
+  <script src="sketch.js"></script>
+  <script src="snake.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <style>
+  * {
+     font-family: 'Open Sans', sans-serif;
+  }
+    h2 {
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    body {
+      background: #EBC3BA;
+    }
+
+    #defaultCanvas0 {
+      position: absolute;
+      top: 16em;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Controls: <br>
+      <h3>Up: Up Arrow <br>
+      Down: Down Arrow <br>
+      Left: Left Arrow <br>
+      Right: Right Arrow <br>
+</h3>
+    </h2>
+  <h2 id="score"></h2>
+  <h2 id="bestScore"></h2>
+  <script type="text/javascript">
+    document.getElementById('score').innerHTML = "Score: " + score;
+    document.getElementById('bestScore').innerHTML = "Best Score: " + bestScore;
+  </script>
+</body>
+
+</html>
